@@ -1,2 +1,2 @@
 # HTML5-e-CSS3-curso
- Meus exercícios e desafios concluídos ao longo do curso de HTML5 e CSS3.
+ O curso possui 5 módulos, de 40h cada. Estou cursando o 4° módulo atualmente, e estou compartilhando os exercícios e desafios concluídos por mim ao longo do curso.
