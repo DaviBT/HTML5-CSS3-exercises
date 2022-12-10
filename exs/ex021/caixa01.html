@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Models</title>
+    <style>
+        .content {
+            background-color:gray;
+            margin:auto;
+            height:120px;
+            width:150px;
+        }
+    </style>
+    <style>
+        h1 {
+            font-family: Industry, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(108, 8, 202);
+            text-align:center;
+            height:80px;
+        }
+
+        h1::before, h1::after {
+            content: '';
+            width:50px;
+            height:3px;
+            background-color:rgb(108, 8, 202);
+            display:block;
+            margin: 15px auto;
+        }
+
+        h2 {
+            margin:auto;
+            height: 60px;
+            width:300px;
+            background-color:lightgrey;
+            border-width:9px;
+            border-style:solid;
+            border-color:aquamarine;
+            border-radius: 0.5em;
+            padding:5px;
+        }
+
+        a {
+            border-width: 0.2em;
+            border-style:solid;
+            border-color:aqua;
+        }
+
+        .teste {
+            margin:1em;
+            display:inline-block;
+            background-color: darkgrey;
+            height:fit-content;
+            width:100px;
+            padding:5px;
+        }
+
+        .teste:hover {
+            background-color:blue;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste Hover</h1>
+    <h2>Títulos são exemplos de box-level</h2>
+    <p>Parágrafos também são box-level, porém, <a href="#">links são inline-level.</a></p>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quisquam sapiente dolore aliquid qui maiores?</p>
+    </div>
+    
+    <div class="teste">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita?</p>
+    </div>
+    <div class="teste">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita?</p>
+    </div>
+    <div class="teste">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita?</p>
+    </div>
+</body>
+</html>

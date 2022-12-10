@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos de formulários</h1>
+    <form method="get" autocomplete="on">
+        <p><label for="iusu">Nome</label>
+            <input type="text" name="usu" id="iusu" required maxlenth="30" size="" placeholder="Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Nota</label>
+            <input type="number" name="nota" id="inota" min="1" max="10" placeholder="0 a 10" step="0.1" value="5.0">
+        </p>
+        <p>
+            <label for="imes">Período letivo</label>
+            <input type="month" name="data" id="imes" required>
+        </p>
+        <p>
+            <label for="idata">Data da prova</label>
+            <input type="date" name="data" id="idata">
+        </p>
+        <p>
+            <label for="ihora">Horário da prova</label>
+            <input type="time" name="hora" id="ihora" value="12:00" max="5">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar tudo">
+        </p>
+    </form>
+</body>
+</html>

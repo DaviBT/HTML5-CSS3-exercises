@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design em HTML5</title>
+</head>
+<body>
+    <h1>Responsive Design somente com HTML</h1>
+    <p>É possível abrir o site em diferentes dispositivos e diminuir o tamanho do navegador.</p>
+
+    <h2>Inserindo imagens</h2>
+    <picture> <!--tag dizendo que uma imagem aparecerá-->
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="lorem lorem">
+    </picture>
+
+    <h2>Inserindo áudios</h2>
+    <p>Reproduzir o áudio em html</p>
+    <!--formatos de audio: MP3 OGG WAV(pesado)-->
+    <!--1°Forma--> 
+    <audio src="midia/no-doubt.mp3" controls autoplay></audio> 
+    <!--2°Forma--> 
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/no-doubt.mp3" type="application/mpeg"> <!--mpeg=mp3--> 
+        <source src="midia/no-doubt.ogg" type="application/ogg">
+        <source src="midia/no-doubt.wav" type="application/wav">
+        <p>Seu navegador não suporta arquivos de áudio, baixe-o <a href="midia/no-doubt.mp3">aqui</a>.</p>
+     </audio>
+</body>
+</html>

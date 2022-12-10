@@ -1,0 +1,12 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+p {
+    transition-duration: 0.25s;
+}
+
+p:hover {
+    color:aliceblue;
+}

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+    body {
+        background-color: white;
+        color: #1e2824;
+        font-family:'Questrial', sans-serif;
+        text-indent:1em;
+    }
+
+    h1 {
+        background-color: #766b65;
+        color: #d19003;
+    }
+
+    h2 {
+        background-color:white;
+        color: #5d3c18;
+    }
+
+    #central {
+        color:white;
+        text-align: center;
+        font-family: Helvetica, sans-serif
+    }
+
+    .titulo {
+        text-align:left;
+    }
+
+    .id {
+        background-color:#FFE500;
+    }
+
+    .class {
+        background-color: rgb(4, 138, 216);
+    }
+
+
+
+    

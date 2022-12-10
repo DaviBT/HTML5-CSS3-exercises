@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.numero {
+    text-align:right;
+}
+
+table {
+    width:400px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding:25px;
+    text-align:center;
+    vertical-align:top;
+}
+
+td:hover {
+    background-color:aquamarine;
+}

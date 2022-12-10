@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width:1000px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding:5px;
+    text-align:center;
+    vertical-align:top;
+}
+
+th {
+    border: 1px solid black;
+    text-align:center;
+}
+
+caption {
+    font-weight:bold;
+    font-size: larger;
+}
+
+tr:nth-child(even) {
+    background-color:rgba(165, 42, 42, 0.439)
+}
+
+div#container {
+    overflow-x: scroll;
+}
