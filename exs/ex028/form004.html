@@ -7,11 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastro.php" autocomplete="on" method="get">
+    <form action="cadastro.php" autocomplete="on" method="post">
         <p>
-            <label for="iest">Estado</label>
+            <label for="iest">Estado:</label>
             <select name="estado" id="iest">
-                <option value="">===Escolha===</option>
 
                 <optgroup label="Região Sudeste">
                     <option value="MG">Minas Gerais</option>
@@ -26,6 +25,22 @@
                 </optgroup>
 
             </select>
+        </p>
+
+        <p>
+            <label for="ioutest">Outro:</label>
+            <input type="text" name="outest" id="ioutest" list="listaest"> <!-- outest=OUTro ESTado -->
+                <datalist id="listaest">
+                        <option value="PE">Pernambuco</option>
+                        <option value="CE">Ceará</option>
+                        <option>Piauí</option>
+                        <option>Alagoas</option>
+                </datalist>
+        </p>
+
+        <p>
+            <label for="imens">Envie sua mensagem:</label><br>
+            <textarea name="mens" id="imens" cols="30" rows="10" maxlength="20"></textarea>
         </p>
 
         <p>
