@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Features</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        *{
+            padding:0px;
+            margin:0px;
+            font-family:'Montserrat', sans-serif;
+        }
+
+        /*Declaração paisagem*/
+        @media screen and (orientation: landscape){
+            body{
+                background-image: url(../../imagens/cev-landscape.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position:left bottom;
+            }
+        } 
+
+        /*Declaração retrato*/
+        @media screen and (orientation: portrait){
+            body{
+                background-image:url(../../imagens/cev-portrait.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position:center bottom;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mudando a orientação do dispositivo</h1>
+</body>
+</html>
