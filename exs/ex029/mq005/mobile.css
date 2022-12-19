@@ -16,7 +16,6 @@ header{
     margin: auto;
     text-align:center;
     background-image:linear-gradient(to bottom, rgba(1, 1, 99, 0.438), rgba(0, 0, 255, 0.397));
-    height:120px;
 }
 
 h1{
@@ -32,9 +31,7 @@ h1::before, h1::after{
     display:block;
     margin:0.2em auto;
 }
-input:checked {
-    display: block; 
-}
+
 .gg-menu{
     display:block;
     margin: auto;
@@ -67,16 +64,24 @@ input:checked {
     top: 6px;
 }
 
-menu#itens{
-    color:white;
-}
-
-menu#itens>a {
+menu{
     display:none;
-    font-weight:bold;
-    color:white;
 }
-
+menu>ul{
+    list-style-type:none;
+}
+menu>ul>li>a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    text-align:center;
+    background-color: beige;
+    color:black;
+    border-top: 2px solid gray;
+}
+menu>ul>li:hover{
+    background-color:gray;
+}
 
 main>article>h2{
     margin:.2em 0em .2em auto;
