@@ -2,49 +2,107 @@
     margin:0px;
     padding:0px;
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration:none
+    text-decoration:none;
+    box-sizing: border-box;
 }
 
 body{
     width:100vw;
     height:100vh;
-    background-color:rgba(169, 169, 169, 0.438);
+    background-color:rgb(1, 1, 99);
 }
 
 header{
-    margin:1em auto;
+    margin: auto;
     text-align:center;
+    background-image:linear-gradient(to bottom, rgba(1, 1, 99, 0.438), rgba(0, 0, 255, 0.397));
+    height:120px;
 }
 
 h1{
     padding:0.1em;
     margin:0.5em;
-    color:blueviolet;
+    color:white;
+}
+h1::before, h1::after{
+    content:'';
+    width:6em;
+    height:.1em;
+    background-color:white;
+    display:block;
+    margin:0.2em auto;
+}
+input:checked {
+    display: block; 
+}
+.gg-menu{
+    display:block;
+    margin: auto;
+    color:white;
+}
+.gg-menu:hover{
+    cursor:pointer;
+    color:aqua;
+}
+.gg-menu {
+    transform: scale(var(--ggs,1))
+}
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor;
+}
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+}
+.gg-menu::after {
+    top: 6px;
 }
 
-menu{
-    background-color:rgba(255, 217, 0, 0.61);
-    padding:0.2em;
+menu#itens{
     color:white;
 }
 
-menu>ul>li {
-    display:inline-block;
-    padding:0.4em;
-    margin:0.2em;
-    border-radius:10%;
-    animation-delay: 0.2s;
-    animation-duration: 0.5s;
+menu#itens>a {
+    display:none;
+    font-weight:bold;
+    color:white;
 }
 
-menu>ul>li:hover{
-    background-color:rgba(137, 43, 226, 0.493);
+
+main>article>h2{
+    margin:.2em 0em .2em auto;
+    background-image:linear-gradient(to right, rgba(0, 0, 255, 0.822), transparent);
+    padding:.2em .2em;
+    text-align:left;
+    color:rgb(4, 3, 65);
 }
 
 main{
     width:70%;
     text-align:justify;
-    margin:auto;
+    margin: 0 auto;
+    background-color:white;
+    padding: 1em;
+    font-size:1.2em;
+    border-radius:0% 0% 1% 1%;
+    box-shadow:1px 2px 2px darkblue;
+}
+
+main>article>p{
+    line-height:1.5em;
+}
+
+main>article>img{
+    margin: 0px auto;
 }
 
 img#phone{display:block}
