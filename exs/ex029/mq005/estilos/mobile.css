@@ -83,6 +83,33 @@ menu>ul>li:hover{
     background-color:gray;
 }
 
+menu#menutelasgrandes{
+    display:none;
+}
+menu#menutelasgrandes{
+    padding:0.2em;
+    color:white;
+}
+
+header>menu#menutelasgrandes>a {
+    display:inline-block;
+    padding:0.2em;
+    margin:0.2em 0em 0em 0em;
+    border-radius:10%;
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+    font-weight: bold;
+    color:white;
+}
+
+header>menu#menutelasgrandes>a:hover{
+    background-color:rgb(255, 255, 255);
+    color:darkblue;
+    text-decoration:underline;
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+}
+
 main>article>h2{
     margin:.2em 0em .2em auto;
     background-image:linear-gradient(to right, rgba(0, 0, 255, 0.822), transparent);

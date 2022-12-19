@@ -1,0 +1,53 @@
+/* Todas as demais mídias */
+
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*medium devices*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+    i#menumobile{
+        display:none;
+    }
+    menu#menutelasgrandes{
+        display:block;
+    }
+    img#phone{display:none}
+    img#tablet{display:block}
+    img#computer{display:none}
+    img#tv{display:none}
+}
+
+/*Large devices*/
+@media screen and (min-width:992px) and (max-width:1199px){
+    i#menumobile{
+        display:none;
+    }
+    menu#menutelasgrandes{
+        display:block;
+    }
+    img#phone{display:none}
+    img#tablet{display:none}
+    img#computer{display:block}
+    img#tv{display:none}
+}
+
+/*EL devices*/
+@media screen and (min-width:1200px){
+    i#menumobile{
+        display:none;
+    }
+    menu#menutelasgrandes{
+        display:block;
+    }
+    img#phone{display:none}
+    img#tablet{display:none}
+    img#computer{display:none}
+    img#tv{display:block}
+}
