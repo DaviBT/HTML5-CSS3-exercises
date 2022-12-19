@@ -1,26 +1,22 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-        *{
-            padding:0px;
-            margin:0px;
-            font-family:'Montserrat', sans-serif;
-        }
 
-        /*Declaração paisagem*/
-        @media screen and (orientation: landscape){
-            body{
-                background-image: url(../../imagens/cev-landscape.jpg);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position:left bottom;
-            }
-        } 
+/*Estilos gerais*/
 
-        /*Declaração retrato*/
-        @media screen and (orientation: portrait){
-            body{
-                background-image:url(../../imagens/cev-portrait.jpg);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position:center bottom;
-            }
-        }
+*margin{
+    padding:0px;
+    margin:0px;
+    font-family:'Montserrat', sans-serif;
+}
+
+html, body {
+    width:100vw;
+    height:100vh;
+    background-color: #233eff;
+}
+
+h1 {
+    color:darkslategray;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.204);
+    padding:10px;
+}
