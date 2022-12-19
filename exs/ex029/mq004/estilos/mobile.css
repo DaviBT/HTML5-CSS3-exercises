@@ -35,10 +35,9 @@ h1{
 
 img{
     margin:auto;
-    display:block;
 }
 
-img#celular{display:block;}
+img#phone{display:block;}
 img#tablet{display:none;}
 img#impressao{display:none;}
 img#desktop{display:none;}
