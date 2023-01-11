@@ -1,0 +1,35 @@
+body{
+    display:grid;
+    background-color:rgb(75, 74, 74);
+    margin:0;
+    height:100vh;
+    grid-template-areas:
+        "header header" /*1 2*/
+        "main aside" /*1 2*/
+        "footer footer"; /*1 2*/
+
+    /*grid height*/
+    grid-template-rows: 6rem 1fr 3rem; /*I have 3 rows*/
+    /*grid width*/
+    grid-template-columns: 1fr 10rem;; /*I have 2 collumns*/
+}
+
+header{
+    grid-area:header;
+    background-color:rgb(1, 95, 95);
+    color:white;
+}
+main{
+    grid-area:main;
+    background-color:rgb(48, 48, 116);
+    color:white;
+}
+aside{
+    grid-area:aside;
+    background-color:burlywood;
+}
+footer{
+    grid-area:footer;
+    background-color:rgba(155, 18, 45, 0.548);
+    color:white;
+}
