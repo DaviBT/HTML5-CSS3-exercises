@@ -10,7 +10,7 @@
     <form>
         <p>
             <label for="iurl">Write an URL:</label>
-            <input type="url" minlength="4" maxlength="20" placeholder="example.com" required pattern="https?:// + . \.com\*" name="url" id="iurl" title="The URL must have a '.com' domain.">
+            <input type="url" minlength="4" maxlength="20" placeholder="https://example.com" required pattern="*\.com\*" name="url" id="iurl" title="The URL must have a '.com' domain and iniciate with 'http://' or 'https://'.">
         </p>
         <input type="submit" value="Send">
     </form>
