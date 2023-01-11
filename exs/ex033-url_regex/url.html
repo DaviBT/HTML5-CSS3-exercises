@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password with RegEx</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="iurl">Write an URL:</label>
+            <input type="url" minlength="4" maxlength="20" placeholder="example.com" required pattern="https?:// + . \.com\*" name="url" id="iurl" title="The URL must have a '.com' domain.">
+        </p>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
